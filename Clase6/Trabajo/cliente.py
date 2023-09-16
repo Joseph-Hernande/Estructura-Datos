@@ -6,8 +6,8 @@ r = requests.get(url)
 print(r.text)
 
 r = requests.post(url + 'encolar', json={'nombre': 'juan', 'productos': ['manzana', 'pera'], "Documento": 12345})
-r = requests.post(url + 'encolar', json={'nombre': 'joseph', 'productos': ['manzana', 'manzana'], "Documento": 12345})
-r = requests.post(url + 'encolar', json={'nombre': 'pedro', 'productos': ['manzana', 'pera'], "Documento": 12345})
-r = requests.post(url + 'encolar', json={'nombre': 'pablo', 'productos': ['manzana', 'mango'], "Documento": 12345})
+r = requests.post(url + 'encolar', json={'nombre': 'joseph', 'productos': ['manzana', 'manzana'], "Documento": 12945})
+r = requests.post(url + 'encolar', json={'nombre': 'pedro', 'productos': ['manzana', 'pera'], "Documento": 12845})
+r = requests.post(url + 'encolar', json={'nombre': 'pablo', 'productos': ['manzana', 'mango'], "Documento": 12645})
 print(r.text)
 

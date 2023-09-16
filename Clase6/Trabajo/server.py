@@ -33,3 +33,10 @@ def desencolar():
 def ver_todos():
     elementos = cola.ver_listado()
     return {"status": "ok", "elementos": elementos}
+
+@app.delete("/eliminar/{mensaje_id}")
+def eliminar_mensaje(mensaje_id: int):
+    if cola.eliminar_mensaje(mensaje_id):
+        return{"status": "ok", "mensaje": f"Mensaje con mensaje_id {mensaje_id} eliminado correctamente."}
+    else:
+        return{"status": "ok", "mensaje": f"No de encontro un mensaje con mensaje_id {mensaje_id}."}
